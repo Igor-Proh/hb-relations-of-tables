@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hb-relations-of-tables" />
         <module name="spring_course_mvc" />
       </profile>
     </annotationProcessing>

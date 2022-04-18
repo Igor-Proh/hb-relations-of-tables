@@ -1,0 +1,18 @@
+create database hb_04_one_to_many_bi;
+
+CREATE TABLE hb_04_one_to_many_bi.departments (
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(15),
+  max_salary int,
+  min_salary int,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE hb_04_one_to_many_bi.employees (
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(15),
+  surname varchar(25),
+  salary int,
+  department_id int,
+  PRIMARY KEY (id),
+  FOREIGN KEY (department_id) REFERENCES hb_04_one_to_many_bi.departments(id));
